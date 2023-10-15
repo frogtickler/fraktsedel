@@ -171,11 +171,11 @@ if st.button('Print'):
 
     #org. no kontakt, av-datum
     l1.text((250,5), "org.No: ", fill=(0, 0, 0), )
-    l1.text((285, 5), av_orgnummer, fill=(0, 0, 0), )
+    l1.text((290, 5), av_orgnummer, fill=(0, 0, 0), )
     l1.text((250,20), "Kontakt: ", fill=(0, 0, 0), )
-    l1.text((290, 20), av_kontakt, fill=(0, 0, 0), )
+    l1.text((295, 20), av_kontakt, fill=(0, 0, 0), )
     l1.text((250,35), "AVS-datum: ", fill=(0, 0, 0), )
-    l1.text((305, 35), av_datum, fill=(0, 0, 0), )
+    l1.text((310, 35), av_datum, fill=(0, 0, 0), )
     #låda (x1,y2), (x2,y2)
     shape1 = [(5, 100), (5, 125)]
     shape2 = [(3, 100), (30, 100)]
