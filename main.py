@@ -209,10 +209,10 @@ if st.button('Print'):
     l1.text((60,370), kundnr, fill=(0, 0, 0), )
     #betalning
     l1.text((13,385), "fraktbetalning: ", fill=(0, 0, 0), )
-    l1.text((85,385), betalning, fill=(0, 0, 0), )
+    l1.text((95,385), betalning, fill=(0, 0, 0), )
     #TILLÄGG
     l1.text((13,400), "Tillägningsinformation: ", fill=(0, 0, 0), )
-    l1.text((125,400), omttol, fill=(0, 0, 0), )
+    l1.text((135,400), omttol, fill=(0, 0, 0), )
     #Mottagare info
    
     l1.text((15,105), "Till:", fill=(0, 0, 0), )
