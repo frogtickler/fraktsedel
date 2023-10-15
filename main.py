@@ -212,7 +212,7 @@ if st.button('Print'):
     l1.text((105,385), betalning, fill=(0, 0, 0), )
     #TILLÄGG
     l1.text((13,400), "Tillägningsinformation: ", fill=(0, 0, 0), )
-    l1.text((145,400), omttol, fill=(0, 0, 0), )
+    l1.text((155,400), omttol, fill=(0, 0, 0), )
     #Mottagare info
    
     l1.text((15,105), "Till:", fill=(0, 0, 0), )
@@ -234,7 +234,7 @@ if st.button('Print'):
     shape9 = [(5, 500), (380, 500)]
     l1.line(shape9, fill =(0,0,0), width = 5)
     l1.text((13,485), "Vikt [kg]: ", fill=(0, 0, 0), )
-    l1.text((60,485), vikttext, fill=(0, 0, 0), )
+    l1.text((70,485), vikttext, fill=(0, 0, 0), )
     l1.text((13,470), "Volym [m^3]: ", fill=(0, 0, 0), )
     l1.text((85,470), volymtext, fill=(0, 0, 0), )
     # The number to be converted into a barcode
