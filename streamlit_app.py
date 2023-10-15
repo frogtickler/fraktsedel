@@ -7,7 +7,6 @@ import sys
 import glob
 from PIL import BdfFontFile
 from PIL import PcfFontFile
-
 from barcode import EAN13
 from barcode.writer import ImageWriter
 
