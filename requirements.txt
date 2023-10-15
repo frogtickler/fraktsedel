@@ -3,8 +3,8 @@ annotated-types==0.6.0
 anyio==3.7.1
 attrs==23.1.0
 backports.zoneinfo==0.2.1
-barcode==1.0.3
-python-barcode==1.0.3
+barcode==0.15.1
+python-barcode==0.15.1
 blinker==1.6.2
 cachetools==5.3.1
 cairocffi==1.6.1
