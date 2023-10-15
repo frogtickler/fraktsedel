@@ -223,13 +223,13 @@ if st.button('Print'):
     l1.text((13,170), lev_stad, fill=(0, 0, 0), )
     l1.text((13,185), "Sweden", fill=(0, 0, 0), )
     l1.text((13,200), "Portkod: ", fill=(0, 0, 0), )
-    l1.text((55,200), lev_port, fill=(0, 0, 0), )
+    l1.text((65,200), lev_port, fill=(0, 0, 0), )
     l1.text((13,215), "Kontakt:", fill=(0, 0, 0), )
-    l1.text((55, 215), lev_kontakt, fill=(0, 0, 0), )
+    l1.text((60, 215), lev_kontakt, fill=(0, 0, 0), )
     l1.text((13,230), "Tel:", fill=(0, 0, 0), )
     l1.text((35, 230), lev_tel, fill=(0, 0, 0), )
     l1.text((13,245), "Våning:", fill=(0, 0, 0), )
-    l1.text((50,245), lev_va, fill=(0, 0, 0), )
+    l1.text((55,245), lev_va, fill=(0, 0, 0), )
     #streck2
     shape9 = [(5, 500), (380, 500)]
     l1.line(shape9, fill =(0,0,0), width = 5)
