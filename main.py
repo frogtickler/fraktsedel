@@ -6,9 +6,9 @@ import sys
 import glob
 from PIL import BdfFontFile
 from PIL import PcfFontFile
-import barcode
 from barcode import EAN13
 from barcode.writer import ImageWriter
+
 
 
 
@@ -158,24 +158,24 @@ height = 725
 if st.button('Print'):
     img = Image.new(mode = "RGB", size = (width, height), color="white")
     l1 = ImageDraw.Draw(img)
-    font1 = ImageFont.truetype('trebucbd.ttf', 10)
-    font2 = ImageFont.truetype('trebucbd.ttf', 13)
-    font7 = ImageFont.truetype('trebucbd.ttf', 9)
+    
+
+
     #Avsändare info
-    l1.text((5,5), "Från", fill=(0, 0, 0), font=font1)
-    l1.text((5,20), Avsandare_namn, fill=(0, 0, 0), font=font2)
-    l1.text((5,35), Avsandare_andress, fill=(0, 0, 0), font=font2)
-    l1.text((5,50), "SE-", fill=(0, 0, 0), font=font2)
-    l1.text((30,50), av_postkod, fill=(0, 0, 0), font=font2)
-    l1.text((5,65), av_stad, fill=(0, 0, 0), font=font2)
+    l1.text((5,5), "Från", fill=(0, 0, 0),)
+    l1.text((5,20), Avsandare_namn, fill=(0, 0, 0), )
+    l1.text((5,35), Avsandare_andress, fill=(0, 0, 0), )
+    l1.text((5,50), "SE-", fill=(0, 0, 0), )
+    l1.text((30,50), av_postkod, fill=(0, 0, 0), )
+    l1.text((5,65), av_stad, fill=(0, 0, 0), )
 
     #org. no kontakt, av-datum
-    l1.text((250,5), "org.No: ", fill=(0, 0, 0), font=font1)
-    l1.text((285, 5), av_orgnummer, fill=(0, 0, 0), font=font7)
-    l1.text((250,20), "Kontakt: ", fill=(0, 0, 0), font=font1)
-    l1.text((290, 20), av_kontakt, fill=(0, 0, 0), font=font7)
-    l1.text((250,35), "AVS-datum: ", fill=(0, 0, 0), font=font1)
-    l1.text((305, 35), av_datum, fill=(0, 0, 0), font=font7)
+    l1.text((250,5), "org.No: ", fill=(0, 0, 0), )
+    l1.text((285, 5), av_orgnummer, fill=(0, 0, 0), )
+    l1.text((250,20), "Kontakt: ", fill=(0, 0, 0), )
+    l1.text((290, 20), av_kontakt, fill=(0, 0, 0), )
+    l1.text((250,35), "AVS-datum: ", fill=(0, 0, 0), )
+    l1.text((305, 35), av_datum, fill=(0, 0, 0), )
     #låda (x1,y2), (x2,y2)
     shape1 = [(5, 100), (5, 125)]
     shape2 = [(3, 100), (30, 100)]
@@ -194,50 +194,49 @@ if st.button('Print'):
     l1.line(shape7, fill =(0,0,0), width = 5)
     l1.line(shape8, fill =(0,0,0), width = 5)
     #referensnummer
-    l1.text((13,320), "Avsändare-referensnummer: ", fill=(0, 0, 0), font=font1)
-    l1.text((150,320), Avsandare_referensnummer, fill=(0, 0, 0), font=font1)
-    l1.text((13,305), "Mottagare-referensnummer: ", fill=(0, 0, 0), font=font1)
-    l1.text((150,305), mottagare_referensnummer, fill=(0, 0, 0), font=font1)
-    font5 = ImageFont.truetype('trebucbd.ttf', 20)
+    l1.text((13,320), "Avsändare-referensnummer: ", fill=(0, 0, 0))
+    l1.text((150,320), Avsandare_referensnummer, fill=(0, 0, 0), )
+    l1.text((13,305), "Mottagare-referensnummer: ", fill=(0, 0, 0))
+    l1.text((150,305), mottagare_referensnummer, fill=(0, 0, 0))
+    
     #streck1
     shape9 = [(5, 335), (380, 335)]
     l1.line(shape9, fill =(0,0,0), width = 5)
     #Frakt företag
-    l1.text((13,350), frakt, fill=(0, 0, 0), font=font5)
+    l1.text((13,350), frakt, fill=(0, 0, 0), )
     #kundnummer
-    l1.text((13,370), "kundnr: ", fill=(0, 0, 0), font=font1)
-    l1.text((60,370), kundnr, fill=(0, 0, 0), font=font1)
+    l1.text((13,370), "kundnr: ", fill=(0, 0, 0), )
+    l1.text((60,370), kundnr, fill=(0, 0, 0), )
     #betalning
-    l1.text((13,385), "fraktbetalning: ", fill=(0, 0, 0), font=font1)
-    l1.text((85,385), betalning, fill=(0, 0, 0), font=font1)
+    l1.text((13,385), "fraktbetalning: ", fill=(0, 0, 0), )
+    l1.text((85,385), betalning, fill=(0, 0, 0), )
     #TILLÄGG
-    l1.text((13,400), "Tillägningsinformation: ", fill=(0, 0, 0), font=font1)
-    l1.text((125,400), omttol, fill=(0, 0, 0), font=font1)
+    l1.text((13,400), "Tillägningsinformation: ", fill=(0, 0, 0), )
+    l1.text((125,400), omttol, fill=(0, 0, 0), )
     #Mottagare info
-    font3 = ImageFont.truetype('trebucbd.ttf', 10)
-    font4 = ImageFont.truetype('trebucbd.ttf', 13)
-    l1.text((13,105), "Till:", fill=(0, 0, 0), font=font1)
-    l1.text((13,120), mottagare_namn, fill=(0, 0, 0), font=font1)
-    l1.text((13,135), mottagare_adress, fill=(0, 0, 0), font=font1)
-    l1.text((13,150), "SE- ", fill=(0, 0, 0), font=font5)
-    l1.text((45,150), lev_postkod, fill=(0, 0, 0), font=font5)
-    l1.text((13,170), lev_stad, fill=(0, 0, 0), font=font2)
-    l1.text((13,185), "Sweden", fill=(0, 0, 0), font=font1)
-    l1.text((13,200), "Portkod: ", fill=(0, 0, 0), font=font1)
-    l1.text((55,200), lev_port, fill=(0, 0, 0), font=font1)
-    l1.text((13,215), "Kontakt:", fill=(0, 0, 0), font=font1)
-    l1.text((55, 215), lev_kontakt, fill=(0, 0, 0), font=font1)
-    l1.text((13,230), "Tel:", fill=(0, 0, 0), font=font1)
-    l1.text((35, 230), lev_tel, fill=(0, 0, 0), font=font1)
-    l1.text((13,245), "Våning:", fill=(0, 0, 0), font=font1)
-    l1.text((50,245), lev_va, fill=(0, 0, 0), font=font1)
+   
+    l1.text((13,105), "Till:", fill=(0, 0, 0), )
+    l1.text((13,120), mottagare_namn, fill=(0, 0, 0), )
+    l1.text((13,135), mottagare_adress, fill=(0, 0, 0), )
+    l1.text((13,150), "SE- ", fill=(0, 0, 0), )
+    l1.text((45,150), lev_postkod, fill=(0, 0, 0), )
+    l1.text((13,170), lev_stad, fill=(0, 0, 0), )
+    l1.text((13,185), "Sweden", fill=(0, 0, 0), )
+    l1.text((13,200), "Portkod: ", fill=(0, 0, 0), )
+    l1.text((55,200), lev_port, fill=(0, 0, 0), )
+    l1.text((13,215), "Kontakt:", fill=(0, 0, 0), )
+    l1.text((55, 215), lev_kontakt, fill=(0, 0, 0), )
+    l1.text((13,230), "Tel:", fill=(0, 0, 0), )
+    l1.text((35, 230), lev_tel, fill=(0, 0, 0), )
+    l1.text((13,245), "Våning:", fill=(0, 0, 0), )
+    l1.text((50,245), lev_va, fill=(0, 0, 0), )
     #streck2
     shape9 = [(5, 500), (380, 500)]
     l1.line(shape9, fill =(0,0,0), width = 5)
-    l1.text((13,485), "Vikt [kg]: ", fill=(0, 0, 0), font=font1)
-    l1.text((60,485), vikttext, fill=(0, 0, 0), font=font1)
-    l1.text((13,470), "Volym [m^3]: ", fill=(0, 0, 0), font=font1)
-    l1.text((85,470), volymtext, fill=(0, 0, 0), font=font1)
+    l1.text((13,485), "Vikt [kg]: ", fill=(0, 0, 0), )
+    l1.text((60,485), vikttext, fill=(0, 0, 0), )
+    l1.text((13,470), "Volym [m^3]: ", fill=(0, 0, 0), )
+    l1.text((85,470), volymtext, fill=(0, 0, 0), )
     # The number to be converted into a barcode
     # Skapa en EAN13-streckkod
     my_code = EAN13(fraktsedelnr, writer=ImageWriter())
