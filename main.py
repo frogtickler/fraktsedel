@@ -215,7 +215,7 @@ if st.button('Print'):
     l1.text((125,400), omttol, fill=(0, 0, 0), )
     #Mottagare info
    
-    l1.text((13,105), "Till:", fill=(0, 0, 0), )
+    l1.text((15,105), "Till:", fill=(0, 0, 0), )
     l1.text((13,120), mottagare_namn, fill=(0, 0, 0), )
     l1.text((13,135), mottagare_adress, fill=(0, 0, 0), )
     l1.text((13,150), "SE- ", fill=(0, 0, 0), )
