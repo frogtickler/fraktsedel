@@ -195,9 +195,9 @@ if st.button('Print'):
     l1.line(shape8, fill =(0,0,0), width = 5)
     #referensnummer
     l1.text((13,320), "Avsändare-referensnummer: ", fill=(0, 0, 0))
-    l1.text((150,320), Avsandare_referensnummer, fill=(0, 0, 0), )
+    l1.text((160,320), Avsandare_referensnummer, fill=(0, 0, 0), )
     l1.text((13,305), "Mottagare-referensnummer: ", fill=(0, 0, 0))
-    l1.text((150,305), mottagare_referensnummer, fill=(0, 0, 0))
+    l1.text((160,305), mottagare_referensnummer, fill=(0, 0, 0))
     
     #streck1
     shape9 = [(5, 335), (380, 335)]
