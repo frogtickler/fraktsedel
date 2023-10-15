@@ -234,7 +234,7 @@ if st.button('Print'):
     shape9 = [(5, 500), (380, 500)]
     l1.line(shape9, fill =(0,0,0), width = 5)
     l1.text((13,485), "Vikt [kg]: ", fill=(0, 0, 0), )
-    l1.text((70,485), vikttext, fill=(0, 0, 0), )
+    l1.text((75,485), vikttext, fill=(0, 0, 0), )
     l1.text((13,470), "Volym [m^3]: ", fill=(0, 0, 0), )
     l1.text((85,470), volymtext, fill=(0, 0, 0), )
     # The number to be converted into a barcode
