@@ -218,7 +218,7 @@ if st.button('Print'):
     l1.text((15,105), "Till:", fill=(0, 0, 0), )
     l1.text((13,120), mottagare_namn, fill=(0, 0, 0), )
     l1.text((13,135), mottagare_adress, fill=(0, 0, 0), )
-    l1.text((13,150), font-size:43;"SE- ", fill=(0, 0, 0),)
+    l1.text((13,150), "SE- ", fill=(0, 0, 0), 75)
     l1.text((45,150), lev_postkod, fill=(0, 0, 0), )
     l1.text((13,170), lev_stad, fill=(0, 0, 0), )
     l1.text((13,185), "Sweden", fill=(0, 0, 0), )
