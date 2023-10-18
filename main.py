@@ -165,7 +165,7 @@ if st.button('Print'):
     l1.text((5,5), "Från", fill=(0, 0, 0),)
     l1.text((5,20), Avsandare_namn, fill=(0, 0, 0), )
     l1.text((5,35), Avsandare_andress, fill=(0, 0, 0), )
-    l1.text((5,50), "SE- ", fill=(0, 0, 0), )
+    l1.text((5,50), "SE- ", fill=(0, 0, 0), size= 45)
     l1.text((30,50), av_postkod, fill=(0, 0, 0), )
     l1.text((5,65), av_stad, fill=(0, 0, 0), )
 
@@ -218,7 +218,7 @@ if st.button('Print'):
     l1.text((15,105), "Till:", fill=(0, 0, 0), )
     l1.text((13,120), mottagare_namn, fill=(0, 0, 0), )
     l1.text((13,135), mottagare_adress, fill=(0, 0, 0), )
-    l1.text((13,150), "SE- ", fill=(0, 0, 0), size=(12, 75, 10) )
+    l1.text((13,150), "SE- ", fill=(0, 0, 0),  )
     l1.text((45,150), lev_postkod, fill=(0, 0, 0), )
     l1.text((13,170), lev_stad, fill=(0, 0, 0), )
     l1.text((13,185), "Sweden", fill=(0, 0, 0), )
