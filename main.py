@@ -13,7 +13,7 @@ from barcode.writer import ImageWriter
 
 
 
-st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":lable:", layout="wide")
+st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":flag-sv:", layout="wide")
 
 col1, col2 = st.columns(2)
 
