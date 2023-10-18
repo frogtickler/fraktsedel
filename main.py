@@ -165,7 +165,7 @@ if st.button('Print'):
     l1.text((5,5), "Från", fill=(0, 0, 0),)
     l1.text((5,20), Avsandare_namn, fill=(0, 0, 0), )
     l1.text((5,35), Avsandare_andress, fill=(0, 0, 0), )
-    l1.text((5,50), "SE- ", fill=(0, 0, 0), font-size: 42px)
+    l1.text((5,50), "SE- ", fill=(0, 0, 0), )
     l1.text((30,50), av_postkod, fill=(0, 0, 0), )
     l1.text((5,65), av_stad, fill=(0, 0, 0), )
 
