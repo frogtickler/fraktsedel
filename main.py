@@ -9,12 +9,12 @@ from PIL import PcfFontFile
 from barcode import EAN13
 from barcode.writer import ImageWriter
 
-st.title('Fraktsedel')
+
 st.header('Skapa en fraktsedel enkelt och gratis') 
 
 
 
-st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":flag-sv:", layout="wide")
+st.set_page_config(page_title="Fraktssedel", layout="wide")
 
 col1, col2 = st.columns(2)
 
