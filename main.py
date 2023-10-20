@@ -10,11 +10,10 @@ from barcode import EAN13
 from barcode.writer import ImageWriter
 
 
-st.header('Skapa en fraktsedel enkelt och gratis') 
 
 
 
-st.set_page_config(page_title="Fraktssedel", layout="wide")
+st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":tada:", layout="wide")
 
 col1, col2 = st.columns(2)
 
