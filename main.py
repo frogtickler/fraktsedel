@@ -17,14 +17,7 @@ st.header("Skapa en fraktsedel enkelt och gratis")
 
 
 
-<html>
-<head>
-<meta name="google-site-verification" content="bakm006IpCy42rj08gMPeKNVedW9hPBtOiP2gdcyo64" />
-</head>
-<body>
-Content goes here.
-</body>
-</html>
+
 
 
 col1, col2 = st.columns(2)
