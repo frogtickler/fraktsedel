@@ -12,7 +12,7 @@ from barcode.writer import ImageWriter
 
 
 st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":tada:", layout="wide")
-
+st.title("Fraktsedel-skaparen")
 st.header("Skapa en fraktsedel enkelt och gratis")
 
 col1, col2 = st.columns(2)
