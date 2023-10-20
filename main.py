@@ -10,7 +10,7 @@ from barcode import EAN13
 from barcode.writer import ImageWriter
 
 
-google-site-verification=QDSSXnIdodTtZaa3EZn7ySDp8eE69zEHiXkXZFoccdw
+googelver = google-site-verification=QDSSXnIdodTtZaa3EZn7ySDp8eE69zEHiXkXZFoccdw
 
 
 st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":flag-sv:", layout="wide")
