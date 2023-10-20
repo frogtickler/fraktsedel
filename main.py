@@ -8,7 +8,10 @@ from PIL import BdfFontFile
 from PIL import PcfFontFile
 from barcode import EAN13
 from barcode.writer import ImageWriter
+import streamlit.components.v1 as components  # Import Streamlit
 
+# Render the h1 block, contained in a frame of size 200x200.
+components.html("<html><head> <meta name="google-site-verification" content="bakm006IpCy42rj08gMPeKNVedW9hPBtOiP2gdcyo64" /> </head></html>")
 
 
 st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":tada:", layout="wide")
