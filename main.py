@@ -252,8 +252,6 @@ if st.button('Print'):
 
 
 
-google = "google-site-verification=QDSSXnIdodTtZaa3EZn7ySDp8eE69zEHiXkXZFoccdw"
-
 
 
 
