@@ -14,8 +14,8 @@ st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":tada:", l
 st.title("Fraktsedel-skaparen")
 st.header("Skapa en fraktsedel enkelt och gratis")
 
-
-st.set_page_config(name="google-site-verification", content="bakm006IpCy42rj08gMPeKNVedW9hPBtOiP2gdcyo64")
+name="google-site-verification" 
+content="bakm006IpCy42rj08gMPeKNVedW9hPBtOiP2gdcyo64"
 
 
 
