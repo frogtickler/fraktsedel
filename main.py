@@ -8,7 +8,7 @@ from PIL import BdfFontFile
 from PIL import PcfFontFile
 from barcode import EAN13
 from barcode.writer import ImageWriter
-<meta name="google-site-verification" content="bakm006IpCy42rj08gMPeKNVedW9hPBtOiP2gdcyo64" >
+
 
 st.set_page_config(page_title="Skapa en enkel fraktsedel", page_icon=":tada:", layout="wide")
 st.title("Fraktsedel-skaparen")
